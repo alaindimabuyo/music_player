@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Music Player</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div id="bg">
+        <div id="blackLayer"></div>
+        <img src="01.jpg"/>
+    </div>
+    
+    <div id="main">
+        <div id="image">
+            <img src="01.jpg" alt="first_image">
+        </div>
+        <div id="player">
+            <div id="songTitle"></div>
+                <div id="buttons">
+                    <button id="pre" onclick="pre()"><img src="pre.png" alt="previous" width="90%" height="90%"></button>
+                    <button id="play" onclick="playOrPauseSong()"><img src="pause.png" alt="play" width="90%" height="90%"></button>
+                    <button id="next" onclick="nextSong()"><img src="next.png" alt="next" width="90%" height="90%"></button>
+                </div>
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
